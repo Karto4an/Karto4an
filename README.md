@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Oleksandr
-- 🌱 I’m currently learning JS and python
-- 📫 TLG: @Karto4an_UA
+- 🌱 I’m currently learning JS
+- 📫 TLG: @Karto4an
 
 <!---
 Karto4an/Karto4an is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
