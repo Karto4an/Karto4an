@@ -2,22 +2,104 @@ h1 {
     color: #6A24FF;
     font-size: 48px;
 }
+h1, h2 {
+    font-weight: 800;
+}
+h2 {
+    color: #1D2254;
+    font-size: 36px;
+}
 
 section {
     background-color: #FFFFFF;
+    border-radius: 10px;
+}
+section:not(:first-child) {
+    margin-top: 32px;
 }
 
 body {
-    background-color: #111862;
+    background-color: #1D2254;
     margin: 50px 50px 50px 50px;
     display: grid;
     grid-template-columns: 625px 32px 1075px;
+    font-family: 'Manrope', sans-serif;
 }
 
+/* SIDE BLOCK ST */
 
 .bio-overview {
     grid-column: 1;
 }
+.bio-overview-name {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding-top: 48px;
+}
+.bio-overview-profilepic {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    display: block;
+    margin: 36px auto 36px auto;
+}
+.bio-overview-shortinfo table {
+    width: 535px;
+    margin: 0 auto 0 auto;
+}
+.bio-overview-shortinfo table tr {
+    display: flex;
+    margin-bottom: 16px;
+}
+.bio-overview-shortinfo table th {
+    font-size: 24px;
+    color: #A3A3A3;
+    width: 194px;
+    display: flex;
+    align-items: center;
+}
+.bio-overview-shortinfo table td {
+    font-size: 36px;
+    color: #3A3D5B;
+    width: 332px;
+    align-items: start;
+}
+.bio-overview-shortinfo table th, td {
+    height: 44px;
+}
+.bio-credo {
+    display: flex;
+}
+.bio-credo svg {
+    margin: 32px 24px auto 24px;
+}
+.bio-credo p {
+    width: 494px;
+    height: 184px;
+    font-size: 34px;
+    margin-top: 24px;
+}
+
+.bio-personality h2 {
+    padding: 32px 32px 24px 32px;
+}
+.bio-personality ul {
+    list-style: none;
+    display: flex;
+}
+.bio-personality li {
+    font-size: 34px;
+    border-radius: 56px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px 12px 32px;
+    margin-bottom: 32px;
+}
+/* SIDE BLOCK END */
+
 .bio-details {
     grid-column: 3;
 }
+
