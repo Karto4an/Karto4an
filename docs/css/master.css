@@ -1,0 +1,181 @@
+h1 {
+    color: #6A24FF;
+    font-size: 48px;
+}
+h1, h2 {
+    font-weight: 800;
+}
+h2 {
+    color: #1D2254;
+    font-size: 36px;
+}
+
+section {
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+section:not(:first-child) {
+    margin-top: 32px;
+}
+
+body {
+    background-color: #1D2254;
+    margin: 50px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 625px 32px 1075px;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* SIDE BLOCK ST */
+
+.bio-overview {
+    grid-column: 1;
+}
+.bio-overview-name {
+    width: fit-content;
+    margin: 0 auto 0 auto;
+    padding-top: 48px;
+}
+.bio-overview-profilepic {
+    width: 410px;
+    height: 410px;
+    border-radius: 50%;
+    display: block;
+    margin: 36px auto 36px auto;
+}
+.bio-overview-shortinfo table {
+    width: 535px;
+    margin: 0 auto 0 auto;
+}
+.bio-overview-shortinfo table tr {
+    display: flex;
+    margin-bottom: 16px;
+}
+.bio-overview-shortinfo table th {
+    font-size: 24px;
+    color: #A3A3A3;
+    width: 194px;
+    display: flex;
+    align-items: center;
+}
+.bio-overview-shortinfo table td {
+    font-size: 36px;
+    font-weight: 500;
+    color: #3A3D5B;
+    width: fit-content;
+    align-items: start;
+}
+.bio-overview-shortinfo table th, td {
+    height: 44px;
+}
+.bio-credo {
+    display: flex;
+}
+.bio-credo svg {
+    margin: 32px 24px auto 24px;
+}
+.bio-credo p {
+    width: 494px;
+    height: 184px;
+    font-size: 34px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+h2 {
+    padding: 32px 32px 24px 32px;
+}
+.bio-personality ul {
+    list-style: none;
+    display: flex;
+}
+.bio-personality ul li:not(:first-child) {
+    margin-left: 12px;
+}
+.bio-personality li {
+    font-size: 34px;
+    border-radius: 56px;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 32px 12px 32px;
+    margin-bottom: 32px;
+}
+/* SIDE BLOCK END */
+
+.bio-details {
+    grid-column: 3;
+}
+.bio-details-bio p {
+    padding: 0 0 32px 32px;
+    font-size: 32px;
+}
+
+.bio-details li::before {
+    content: "• ";
+    color: #6A24FF;
+    font-size: 36px;
+    padding-right: 16px;
+}
+.bio-details li {
+    font-size: 32px;
+    display: flex;
+}
+.bio-details li:not(:last-child) {
+    padding-bottom: 16px;
+}
+.bio-details li:last-child {
+    padding-bottom: 32px;
+}
+.bio-details-brands img:first-of-type {
+    margin-left: 32px;
+}
+.bio-details-brands img {
+    margin-bottom: 32px;
+}
+
+
+.bio-details-paymentmedium, .bio-details-platform {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.bio-details-paymentmedium img, .bio-details-platform img {
+    width: 110px;
+    height: 95px;
+    margin: 0 auto 0 auto;
+}
+.bio-details-paymentmedium span, .bio-details-platform span {
+    margin: 0 auto 0 auto;
+}
+.bio-details-paymentmediums-container, .bio-details-platform-container {
+    display: flex;
+}
+.bio-details-paymentmediums-container div:not(:first-child) {
+    margin-left: 24px;
+}
+.bio-details-paymentmediums-container div:first-of-type {
+    margin-left: 32px;
+}
+
+.bio-details-platform-container div:not(:first-child) {
+    margin-left: 24px;
+}
+.bio-details-platform-container div:first-of-type {
+    margin-left: 32px;
+}
+
+
+.paired-sections {
+    margin-top: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 32px 1fr;
+}
+.bio-details-platforms {
+    grid-column: 3;
+    margin-top: 0 !important;
+}
