@@ -60,8 +60,9 @@ body {
 }
 .bio-overview-shortinfo table td {
     font-size: 36px;
+    font-weight: 500;
     color: #3A3D5B;
-    width: 332px;
+    width: fit-content;
     align-items: start;
 }
 .bio-overview-shortinfo table th, td {
@@ -78,6 +79,7 @@ body {
     height: 184px;
     font-size: 34px;
     margin-top: 24px;
+    margin-bottom: 32px;
 }
 
 h2 {
@@ -86,6 +88,9 @@ h2 {
 .bio-personality ul {
     list-style: none;
     display: flex;
+}
+.bio-personality ul li:not(:first-child) {
+    margin-left: 12px;
 }
 .bio-personality li {
     font-size: 34px;
@@ -102,4 +107,75 @@ h2 {
 .bio-details {
     grid-column: 3;
 }
+.bio-details-bio p {
+    padding: 0 0 32px 32px;
+    font-size: 32px;
+}
 
+.bio-details li::before {
+    content: "• ";
+    color: #6A24FF;
+    font-size: 36px;
+    padding-right: 16px;
+}
+.bio-details li {
+    font-size: 32px;
+    display: flex;
+}
+.bio-details li:not(:last-child) {
+    padding-bottom: 16px;
+}
+.bio-details li:last-child {
+    padding-bottom: 32px;
+}
+.bio-details-brands img:first-of-type {
+    margin-left: 32px;
+}
+.bio-details-brands img {
+    margin-bottom: 32px;
+}
+
+
+.bio-details-paymentmedium, .bio-details-platform {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.bio-details-paymentmedium img, .bio-details-platform img {
+    width: 110px;
+    height: 95px;
+    margin: 0 auto 0 auto;
+}
+.bio-details-paymentmedium span, .bio-details-platform span {
+    margin: 0 auto 0 auto;
+}
+.bio-details-paymentmediums-container, .bio-details-platform-container {
+    display: flex;
+}
+.bio-details-paymentmediums-container div:not(:first-child) {
+    margin-left: 24px;
+}
+.bio-details-paymentmediums-container div:first-of-type {
+    margin-left: 32px;
+}
+
+.bio-details-platform-container div:not(:first-child) {
+    margin-left: 24px;
+}
+.bio-details-platform-container div:first-of-type {
+    margin-left: 32px;
+}
+
+
+.paired-sections {
+    margin-top: 32px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 1fr 32px 1fr;
+}
+.bio-details-platforms {
+    grid-column: 3;
+    margin-top: 0 !important;
+}
