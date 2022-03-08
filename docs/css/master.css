@@ -1,12 +1,23 @@
-body {
-    background-color: #111862;
-    margin: 50px 50px 50px 50px;
-}
-
 h1 {
     color: #6A24FF;
+    font-size: 48px;
 }
 
 section {
     background-color: #FFFFFF;
+}
+
+body {
+    background-color: #111862;
+    margin: 50px 50px 50px 50px;
+    display: grid;
+    grid-template-columns: 625px 32px 1075px;
+}
+
+
+.bio-overview {
+    grid-column: 1;
+}
+.bio-details {
+    grid-column: 3;
 }
