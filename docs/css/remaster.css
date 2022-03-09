@@ -146,7 +146,7 @@ main {
 .bio-details-paymentmediums-container, .bio-details-platform-container {
     display: flex;
 }
-.bio-details-paymentmedium, .bio-details-platform-container {
+.bio-details-paymentmedium, .bio-details-platform {
     margin-right: 24px;
 }
 .bio-details-paymentmedium, .bio-details-platform {
