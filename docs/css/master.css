@@ -1,21 +1,22 @@
+/* HEADERS ST */
 h1 {
     color: #6A24FF;
     font-size: 48px;
-}
-h1, h2 {
-    font-weight: 800;
 }
 h2 {
     color: #1D2254;
     font-size: 36px;
 }
+h1, h2 {
+    font-weight: 800;
+}
+/* HEADERS END */
 
+
+/* GENERAL ST */
 section {
     background-color: #FFFFFF;
     border-radius: 10px;
-}
-section:not(:first-child) {
-    margin-top: 32px;
 }
 
 body {
@@ -25,11 +26,15 @@ body {
     grid-template-columns: 625px 32px 1075px;
     font-family: 'Manrope', sans-serif;
 }
+/* GENERAL END */
+
 
 /* SIDE BLOCK ST */
-
 .bio-overview {
     grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 .bio-overview-name {
     width: fit-content;
@@ -104,8 +109,13 @@ h2 {
 }
 /* SIDE BLOCK END */
 
+
+/* MAIN BLOCK ST */
 .bio-details {
     grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 .bio-details-bio p {
     padding: 0 0 32px 32px;
@@ -170,12 +180,11 @@ h2 {
 
 
 .paired-sections {
-    margin-top: 32px;
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 1fr 32px 1fr;
 }
 .bio-details-platforms {
     grid-column: 3;
-    margin-top: 0 !important;
 }
+/* MAIN BLOCK END */
