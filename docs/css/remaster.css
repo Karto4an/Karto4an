@@ -133,6 +133,7 @@ main {
 
 .paired-sections {
     display: flex;
+    flex-wrap: wrap;
 }
 .paired-sections img {
     width: 110px;
@@ -157,4 +158,25 @@ main {
 }
 .bio-details-platforms {
     margin-left: 32px;
+}
+
+
+@media screen and (max-width : 1120px) {
+    body {
+        flex-direction: column;
+    }
+    .bio-details {
+        margin-left: 0;
+    }
+    .bio-overview {
+        align-items: center;
+    }
+    .bio-overview section {
+        width: fit-content;
+    }
+}
+@media screen and (max-width : 855px) {
+    .bio-details-platforms {
+        margin-left: 0;
+    }
 }
