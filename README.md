@@ -1,7 +1,7 @@
 # Python Middle Dev 🪨
 
 ## Tech Stack
-### Python Libs:
+Python Libs:
 - Django
 - Flask
 - FastAPI
